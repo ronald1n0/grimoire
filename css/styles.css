@@ -40,6 +40,30 @@ nav.sticky-title h1 {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 600px) {
+  #timeline {
+    flex-direction: column;
+  }
+
+  .tl-item {
+    width: 100% !important;
+    height: 400px;
+    min-height: auto;
+  }
+
+  #timeline:hover .tl-item {
+    width: 100% !important;
+  }
+
+  .tl-item:hover {
+    width: 100% !important;
+  }
+
+  .tl-content {
+    top: 45%;
+  }
+}
+
 /* New Styles */
 #timeline {
   display: flex;
@@ -51,6 +75,7 @@ nav.sticky-title h1 {
 }
 
 .tl-item {
+  display: flex;
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
